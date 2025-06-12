@@ -1,0 +1,74 @@
+/* prevents weird spacing on page */
+* {
+    margin: 0;
+}
+body {
+    background-color: #333333;
+}
+
+/*
+ *
+ * HEADER
+ *
+ */
+
+/* allows for content in header (aka intro and stats divs) to be horizontal */
+.header {
+    background-color: #484848;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* intro takes up 50% of the header */
+.intro {
+    width: 50%;
+    border: solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* changes instructions styling */
+.instructions {
+    padding: 10px;
+    color: white;
+}
+/* changes START button styling */
+.startBtn {
+    background-color: #E98300;
+    color: #333333;
+}
+
+/* allows for score and time left components to be horizontal */
+.stats {
+    border: solid red;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+/* styles the score */
+/* allows score label and score itself to be horizontal */
+.scoreContainer {
+    color: white;
+    display: flex;
+}
+.score {
+    color: #E98300;
+    margin-left: 15px;
+}
+
+/* styles the time left */
+/* allows time label and time itself to be horizontal */
+.timeContainer {
+    color: white;
+    display: flex;
+}
+.time {
+    color: #E98300;
+    margin-left: 15px;
+}
