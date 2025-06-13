@@ -4,6 +4,9 @@
 }
 body {
     background-color: #333333;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*
@@ -24,7 +27,6 @@ body {
 /* intro takes up 50% of the header */
 .intro {
     width: 50%;
-    border: solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,18 +35,20 @@ body {
 
 /* changes instructions styling */
 .instructions {
-    padding: 10px;
+    padding: 25px;
     color: white;
+    font-size: 24px;
 }
 /* changes START button styling */
 .startBtn {
     background-color: #E98300;
     color: #333333;
+    padding: 10px 40px 10px 40px;
+    font-size: 24px;
 }
 
 /* allows for score and time left components to be horizontal */
 .stats {
-    border: solid red;
     display: flex;
     justify-content: space-around;
     width: 50%;
@@ -56,9 +60,11 @@ body {
 .scoreContainer {
     color: white;
     display: flex;
+    align-items: center;
 }
 .score {
     color: #E98300;
+    font-size: 36px;
     margin-left: 15px;
 }
 
@@ -67,8 +73,24 @@ body {
 .timeContainer {
     color: white;
     display: flex;
+    align-items: center;
 }
 .time {
     color: #E98300;
+    font-size: 36px;
     margin-left: 15px;
+}
+
+/* styles the word that will be typed */
+.testContainer {
+    width: auto;
+    height: 75vh;
+    align-content: center;
+    text-align: center;
+    border: orange solid;
+}
+/* styles tested word */
+.test {
+    font-size: 20vw;
+    color: white;
 }
