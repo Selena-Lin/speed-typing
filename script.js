@@ -1,4 +1,4 @@
-// declare variables that refer to html elements
+// declare and define variables that refer to html elements
 let btn = document.querySelector(".startBtn");
 let time = document.querySelector(".time");
 let score = document.querySelector(".score");

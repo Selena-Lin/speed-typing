@@ -81,13 +81,19 @@ body {
     margin-left: 15px;
 }
 
+/*
+ * 
+ * TEST
+ *
+ */
+
 /* styles the word that will be typed */
 .testContainer {
     width: auto;
     height: 75vh;
     align-content: center;
     text-align: center;
-    border: orange solid;
+    /* border: orange solid; */
 }
 /* styles tested word */
 .test {
@@ -95,6 +101,7 @@ body {
     color: white;
 }
 
+/* used for correct letters */
 .background {
     background-color: #E98300;
 }
