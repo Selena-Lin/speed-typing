@@ -81,7 +81,7 @@ function random_word() {
 // button must start countdown and produce random word
 btn.addEventListener("click", function() {
     //prevents restarting mid-game
-    if (game_active == true) {
+    if (game_active === true) {
         return;
     }
     //prevents button double click/ further clicks
@@ -104,11 +104,11 @@ function typing(event) {
     // goes through the each span (container of the letter) that make up spans
     for (let i = 0; i < spans.length; i++) {
         //checks the letter of the span matches of the typed letter
-        if (spans[i].innerHTML == typed) {
+        if (spans[i].innerHTML === typed) {
             //add a background if current span doesn't have a background
             //and if previous span doesn't exist (beginning of word) or already has background (middle of word)
-            if ((spans[i].classList.contains("background") == false) && 
-                    (spans[i-1] == undefined || spans[i-1].classList.contains("background") == true)) {
+            if ((spans[i].classList.contains("background") === false) && 
+                    (spans[i-1] === undefined || spans[i-1].classList.contains("background") === true)) {
                 spans[i].classList.add("background");
                 break;
             }
@@ -118,7 +118,7 @@ function typing(event) {
     let checker = 0;
     for (let j = 0; j < spans.length; j++) {
         //checker checks how many spans have background colors
-        if (spans[j].className == "span background") {
+        if (spans[j].className === "span background") {
             checker++;
         }
         //checks when the entire word is typed
