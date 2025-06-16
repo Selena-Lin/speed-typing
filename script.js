@@ -34,7 +34,7 @@ function countdown() {
             test.innerHTML = "";
             time.innerHTML = "60";
 
-            btn.disabled = false;
+            // btn.disabled = false; //unnecessary
             game_active = false;
 
             clearInterval(timer);
@@ -85,7 +85,7 @@ btn.addEventListener("click", function() {
         return;
     }
     //prevents button double click/ further clicks
-    btn.disabled = true;
+    // btn.disabled = true; //unnecessary
     // status of if there is a game/round that is ongoing
     game_active = true;
 
