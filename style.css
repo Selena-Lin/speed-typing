@@ -43,7 +43,7 @@ body {
 .startBtn {
     background-color: #E98300;
     color: #333333;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 40px 10px 40px; /* top right bottom left */
     font-size: 24px;
 }
 

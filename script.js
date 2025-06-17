@@ -50,6 +50,7 @@ let list = ["tee","fire","best","summer","fun","strawberry","liberty","house","c
 // random word to type functionality
 function random_word() {
     //generates a random number; used to access a random word in the word list
+    //Math.random() generates a value 0 (inclusive) to 1 (exclusive)
     let random = Math.floor(Math.random() * list.length);
 
     //splits the a random word from the list (of words) into it's characters
@@ -122,7 +123,7 @@ function typing(event) {
             checker++;
         }
         //checks when the entire word is typed
-        if (checker == spans.length) {
+        if (checker === spans.length) {
             //updates points
             points = points + 1;
             score.innerHTML = points;
